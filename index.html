@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Takeout Picker</title>
+        <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Takeout Picker</h1>
+            <p>Is your girlfriend hungry but don't know what to pick? Don't worry! We'll pick for you!</p>
+
+            <h3>What kind of mood is your girlfriend in?</h3>
+                <div id="moods">
+                    <button onclick="setMood(this, 'hungry')">Hungry</button>
+                    <button onclick="setMood(this, 'healthy')">Healthy</button>
+                    <button onclick="setMood(this, 'comfort')">Comfort</button>
+                </div>
+
+            <h3>Custom food list</h3>
+
+            <div class="custom-box">
+                <input id="foodInput" placeholder="Add a food or restaurant">
+                <button onclick="addFood()">Add</button>
+                <button id="toggleBtn" onclick="toggleCustomList()">Show list</button>
+            </div>
+
+            <ul id="customList" style="display:none;"></ul>
+            <p>
+                <button onclick="useCustomList()" id="useBtn">Use custom list</button>
+            </p>
+
+            <br>
+            <button onclick="pickFood()">Pick for me</button>
+
+            <h2 id="result"></h2>
+        </div>
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    </body>
+</html>

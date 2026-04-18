@@ -1,0 +1,110 @@
+body {
+  font-family: 'Quicksand', serif;
+  background: linear-gradient(135deg, #dfeaf3);
+  text-align: center;
+  margin-top: 100px;
+}
+
+.container {
+  background: white;
+  width: 320px;
+  margin: auto;
+  padding: 35px;
+  border-radius: 25px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #888;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #9ec0db;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #5e96c3;
+  transform: scale(1.05);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 22px;
+}
+
+#moods button, #type button {
+  margin: 5px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: none;
+  background: #9ec0db;
+  cursor: pointer;
+}
+
+#moods button:hover, #type button:hover {
+  background: #7eabcf;
+}
+
+.selected {
+  background: #5e96c3 !important;
+  color: white;
+}
+
+.custom-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+#customList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  opacity: 0.6;
+  padding: 2px 6px;
+  color: 	#5e96c3;
+  transition: all 0.2s ease;
+}
+
+.remove-btn:hover {
+  color: white;
+  background: #7eabcf;
+  border-radius: 6px;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.food-text {
+  flex: 1;
+  text-align: left;
+}
+
+#customList {
+    display: none;
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
